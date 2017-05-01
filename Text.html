@@ -11,7 +11,7 @@
 
 
 
-<title>Passenger Review</title>
+<title>Text Analysis</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -179,13 +179,16 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="ggplot.html">ggplot</a>
-</li>
-<li>
   <a href="datatable.html">Data Table</a>
 </li>
 <li>
   <a href="map.html">Map</a>
+</li>
+<li>
+  <a href="ggplot.html">Performance Analysis</a>
+</li>
+<li>
+  <a href="Text.html">Text Analysis</a>
 </li>
 <li>
   <a href="conclusion.html">Conclusion</a>
@@ -202,12 +205,28 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Passenger Review</h1>
+<h1 class="title toc-ignore">Text Analysis</h1>
 
 </div>
 
 
-<div style="width: 100% ; height: 400px ; text-align: center; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;" class="muted well">Shiny applications not supported in static R Markdown documents</div>
+<div id="frequency-analysis" class="section level2">
+<h2>Frequency Analysis</h2>
+<p>Overall frequent terms used when speak to flights with three airlines.</p>
+<p><img src="Text_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Different frequent terms in reviews for three airlines.</p>
+<p><img src="Text_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>We can tell the most common things the passengers care about are plane, crew, seat, time and food. Comparing different airlines, delta have some positive words like good, great, nice, excellent. But the other two have negative words like old, late, delayed and cancelled.</p>
+</div>
+<div id="sentiment-analysis" class="section level2">
+<h2>Sentiment Analysis</h2>
+<p><img src="Text_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>Delta airline have positive comments while the other two are more negative. Also US citizen are more likely to give negative comments. It might due to international filght service are better. <img src="Text_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>Overall, delta are better than the other two. Interestingly, people with economy seats are more likely to give negative feedbacks, while business and first class passengers mostly give positive comments.</p>
+<p><img src="Text_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>American and United airline have more passengers with higher sadness level. Delta have only a few passengers with sadness level greater than 2.</p>
+<p>As a conclusion, Delta airline provide more pleasant flight experience than American and United airlines. International flight provide better service than domestic. Those suffer the most are economy class passengers. But delta on average still have above neutral comments from economy class. This might explain why delta tickets are always more expensive. But if you want a better flight experience, choose delta.</p>
+</div>
 
 
 
